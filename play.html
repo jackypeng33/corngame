@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play Game - Game Hub</title>
+    <meta name="description" content="Experience exciting games at Game Hub.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Game Hub</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="games.html">Browse Games</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="game-play">
+            <div class="container">
+                <h2 id="game-title">Loading game...</h2>
+                <div class="game-details">
+                    <p id="game-description">Loading game details...</p>
+                    <p id="game-category" class="category-tag">Category: Loading...</p>
+                </div>
+                
+                <div class="iframe-container">
+                    <iframe id="game-iframe" src="about:blank" allowfullscreen></iframe>
+                </div>
+                
+                <div class="game-controls">
+                    <a href="games.html" class="btn back-btn">Back to Games</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Game Hub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html> 

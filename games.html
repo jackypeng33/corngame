@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Games - Game Hub</title>
+    <meta name="description" content="Browse and play various exciting games at Game Hub.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Game Hub</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="games.html" class="active">Browse Games</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="games">
+            <div class="container">
+                <h2>All Games</h2>
+                
+                <div class="search-container">
+                    <input type="text" id="search-input" placeholder="Search games...">
+                </div>
+                
+                <div class="category-filters">
+                    <button class="filter-btn active" data-category="all">All Categories</button>
+                    <button class="filter-btn" data-category="kids">Kids Games</button>
+                    <button class="filter-btn" data-category="action">Action Games</button>
+                    <button class="filter-btn" data-category="puzzle">Puzzle Games</button>
+                    <button class="filter-btn" data-category="casual">Casual Games</button>
+                    <button class="filter-btn" data-category="multiplayer">Multiplayer Games</button>
+                </div>
+                
+                <div class="game-grid" id="games-container">
+                    <!-- Games will be dynamically populated here -->
+                </div>
+                
+                <div id="no-results" class="hidden center">
+                    <p>No games found matching your criteria.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Game Hub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html> 
