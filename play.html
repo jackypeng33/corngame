@@ -15,11 +15,6 @@
             border-radius: 4px;
             background-color: #f8d7da;
         }
-        .debug-info {
-            font-size: 0.8rem;
-            color: #6c757d;
-            margin-top: 1rem;
-        }
         .iframe-fallback {
             text-align: center;
             padding: 2rem;
@@ -28,6 +23,10 @@
             margin: 1rem 0;
         }
         .iframe-fallback .btn {
+            margin-top: 1rem;
+        }
+        .fullscreen-btn {
+            text-align: center;
             margin-top: 1rem;
         }
     </style>
@@ -59,7 +58,12 @@
                 <div id="error-container" class="error-message hidden"></div>
                 
                 <div class="iframe-container">
-                    <iframe id="game-iframe" src="about:blank" allowfullscreen sandbox="allow-forms allow-modals allow-orientation-lock allow-pointer-lock allow-popups allow-popups-to-escape-sandbox allow-presentation allow-same-origin allow-scripts"></iframe>
+                    <!-- Simplified iframe without sandbox attributes -->
+                    <iframe id="game-iframe" src="about:blank" allowfullscreen title="Game"></iframe>
+                </div>
+                
+                <div class="fullscreen-btn">
+                    <a id="fullscreen-link" href="#" target="_blank" rel="noopener noreferrer" class="btn">Play Fullscreen</a>
                 </div>
                 
                 <div id="iframe-fallback" class="iframe-fallback hidden">
@@ -68,12 +72,6 @@
                     <p>Click the button below to open the game in a new window:</p>
                     <a id="fallback-link" href="#" target="_blank" rel="noopener noreferrer" class="btn">Open Game in New Window</a>
                 </div>
-                
-                <!-- <div class="debug-info">
-                    <p>Current URL: <span id="current-url"></span></p>
-                    <p>Game ID: <span id="game-id"></span></p>
-                    <p>Game URL: <span id="game-url"></span></p>
-                </div> -->
                 
                 <div class="game-controls">
                     <a href="games.html" class="btn back-btn">Back to Games</a>

@@ -96,6 +96,7 @@ function initPlayPage() {
     const errorContainer = document.getElementById('error-container');
     const iframeFallback = document.getElementById('iframe-fallback');
     const fallbackLink = document.getElementById('fallback-link');
+    const fullscreenLink = document.getElementById('fullscreen-link');
     
     // Get game ID from URL
     const urlParams = new URLSearchParams(window.location.search);
@@ -117,7 +118,11 @@ function initPlayPage() {
                 gameCategory.textContent = `Category: ${categoryText}`;
             }
             
-            // Setup fallback link
+            // Setup fullscreen and fallback links
+            if (fullscreenLink) {
+                fullscreenLink.href = game.url;
+            }
+            
             if (fallbackLink) {
                 fallbackLink.href = game.url;
             }
@@ -129,7 +134,7 @@ function initPlayPage() {
                 if (iframeFallback) {
                     iframeFallback.classList.remove('hidden');
                 }
-            }, 5000); // 5 seconds timeout
+            }, 10000); // 10 seconds timeout
             
             // Add error handling for iframe
             gameIframe.onerror = function(event) {
@@ -148,14 +153,10 @@ function initPlayPage() {
             
             // Add load event handler
             gameIframe.onload = function() {
-                console.log('Game iframe loaded successfully');
-                clearTimeout(iframeLoadTimeout);
-                
-                // Check if iframe content is actually accessible
-                try {
-                    // This will throw an error if cross-origin restrictions apply
-                    const iframeContent = gameIframe.contentWindow.document;
-                    console.log('Iframe content is accessible');
+                // Only consider it loaded if src is not about:blank
+                if (gameIframe.src !== 'about:blank') {
+                    console.log('Game iframe loaded successfully');
+                    clearTimeout(iframeLoadTimeout);
                     
                     if (errorContainer) {
                         errorContainer.classList.add('hidden');
@@ -164,20 +165,13 @@ function initPlayPage() {
                     if (iframeFallback) {
                         iframeFallback.classList.add('hidden');
                     }
-                } catch (error) {
-                    console.warn('Cross-origin restrictions are preventing iframe access', error);
-                    
-                    if (iframeFallback) {
-                        iframeFallback.classList.remove('hidden');
-                    }
                 }
             };
             
             try {
-                // Load game into iframe with a proxy URL if needed
-                // You may replace this with a proxy URL on your server
-                gameIframe.src = game.url;
+                // Load game into iframe directly
                 console.log('Attempting to load game URL:', game.url);
+                gameIframe.src = game.url;
             } catch (error) {
                 console.error('Error setting iframe src:', error);
                 if (errorContainer) {
