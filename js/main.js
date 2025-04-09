@@ -94,22 +94,12 @@ function initPlayPage() {
     const gameDescription = document.getElementById('game-description');
     const gameCategory = document.getElementById('game-category');
     const errorContainer = document.getElementById('error-container');
-    const currentUrlSpan = document.getElementById('current-url');
-    const gameIdSpan = document.getElementById('game-id');
-    const gameUrlSpan = document.getElementById('game-url');
-    
-    // Display current URL
-    if (currentUrlSpan) {
-        currentUrlSpan.textContent = window.location.href;
-    }
+    const iframeFallback = document.getElementById('iframe-fallback');
+    const fallbackLink = document.getElementById('fallback-link');
     
     // Get game ID from URL
     const urlParams = new URLSearchParams(window.location.search);
     const gameId = urlParams.get('id');
-    
-    if (gameIdSpan) {
-        gameIdSpan.textContent = gameId || 'Not specified';
-    }
     
     if (gameId && gameIframe) {
         // Find game data
@@ -127,41 +117,77 @@ function initPlayPage() {
                 gameCategory.textContent = `Category: ${categoryText}`;
             }
             
-            if (gameUrlSpan) {
-                gameUrlSpan.textContent = game.url;
+            // Setup fallback link
+            if (fallbackLink) {
+                fallbackLink.href = game.url;
             }
             
+            // Set a timeout to check if the iframe loads
+            let iframeLoadTimeout = setTimeout(() => {
+                // If this executes, the iframe didn't load successfully
+                console.warn('Iframe load timeout - game may be blocked by CSP');
+                if (iframeFallback) {
+                    iframeFallback.classList.remove('hidden');
+                }
+            }, 5000); // 5 seconds timeout
+            
             // Add error handling for iframe
-            gameIframe.onerror = function() {
-                console.error('Failed to load game iframe');
+            gameIframe.onerror = function(event) {
+                console.error('Failed to load game iframe', event);
+                clearTimeout(iframeLoadTimeout);
+                
                 if (errorContainer) {
-                    errorContainer.textContent = `Failed to load game. Please try the direct link option or check your browser settings.`;
+                    errorContainer.textContent = 'Failed to load game iframe due to security restrictions.';
                     errorContainer.classList.remove('hidden');
                 }
-                gameTitle.textContent = 'Error Loading Game';
-                gameDescription.textContent = 'Sorry, there was an error loading the game. Please try again later.';
+                
+                if (iframeFallback) {
+                    iframeFallback.classList.remove('hidden');
+                }
             };
             
             // Add load event handler
             gameIframe.onload = function() {
                 console.log('Game iframe loaded successfully');
-                if (errorContainer) {
-                    errorContainer.classList.add('hidden');
+                clearTimeout(iframeLoadTimeout);
+                
+                // Check if iframe content is actually accessible
+                try {
+                    // This will throw an error if cross-origin restrictions apply
+                    const iframeContent = gameIframe.contentWindow.document;
+                    console.log('Iframe content is accessible');
+                    
+                    if (errorContainer) {
+                        errorContainer.classList.add('hidden');
+                    }
+                    
+                    if (iframeFallback) {
+                        iframeFallback.classList.add('hidden');
+                    }
+                } catch (error) {
+                    console.warn('Cross-origin restrictions are preventing iframe access', error);
+                    
+                    if (iframeFallback) {
+                        iframeFallback.classList.remove('hidden');
+                    }
                 }
             };
             
             try {
-                // Load game into iframe
+                // Load game into iframe with a proxy URL if needed
+                // You may replace this with a proxy URL on your server
                 gameIframe.src = game.url;
                 console.log('Attempting to load game URL:', game.url);
             } catch (error) {
                 console.error('Error setting iframe src:', error);
                 if (errorContainer) {
-                    errorContainer.textContent = `Error loading game: ${error.message}. Please try the direct link option.`;
+                    errorContainer.textContent = `Error setting iframe src: ${error.message}`;
                     errorContainer.classList.remove('hidden');
                 }
-                gameTitle.textContent = 'Error Loading Game';
-                gameDescription.textContent = 'Sorry, there was an error loading the game. Please try again later.';
+                
+                if (iframeFallback) {
+                    iframeFallback.classList.remove('hidden');
+                }
             }
         } else {
             // Game not found

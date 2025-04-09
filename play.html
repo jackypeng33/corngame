@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Play Game - Game Hub</title>
     <meta name="description" content="Experience exciting games at Game Hub.">
-    <meta http-equiv="Content-Security-Policy" content="frame-src * 'self' https://*.crazygames.com https://*.sprunki.org https://sprunki.org; frame-ancestors 'self';">
     <link rel="stylesheet" href="css/style.css">
     <style>
         .error-message {
@@ -19,6 +18,16 @@
         .debug-info {
             font-size: 0.8rem;
             color: #6c757d;
+            margin-top: 1rem;
+        }
+        .iframe-fallback {
+            text-align: center;
+            padding: 2rem;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            margin: 1rem 0;
+        }
+        .iframe-fallback .btn {
             margin-top: 1rem;
         }
     </style>
@@ -50,7 +59,14 @@
                 <div id="error-container" class="error-message hidden"></div>
                 
                 <div class="iframe-container">
-                    <iframe id="game-iframe" src="about:blank" allowfullscreen></iframe>
+                    <iframe id="game-iframe" src="about:blank" allowfullscreen sandbox="allow-forms allow-modals allow-orientation-lock allow-pointer-lock allow-popups allow-popups-to-escape-sandbox allow-presentation allow-same-origin allow-scripts"></iframe>
+                </div>
+                
+                <div id="iframe-fallback" class="iframe-fallback hidden">
+                    <h3>Unable to load game in this page</h3>
+                    <p>Due to security restrictions, we're unable to load this game directly in our website.</p>
+                    <p>Click the button below to open the game in a new window:</p>
+                    <a id="fallback-link" href="#" target="_blank" rel="noopener noreferrer" class="btn">Open Game in New Window</a>
                 </div>
                 
                 <!-- <div class="debug-info">
