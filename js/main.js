@@ -93,10 +93,23 @@ function initPlayPage() {
     const gameTitle = document.getElementById('game-title');
     const gameDescription = document.getElementById('game-description');
     const gameCategory = document.getElementById('game-category');
+    const errorContainer = document.getElementById('error-container');
+    const currentUrlSpan = document.getElementById('current-url');
+    const gameIdSpan = document.getElementById('game-id');
+    const gameUrlSpan = document.getElementById('game-url');
+    
+    // Display current URL
+    if (currentUrlSpan) {
+        currentUrlSpan.textContent = window.location.href;
+    }
     
     // Get game ID from URL
     const urlParams = new URLSearchParams(window.location.search);
     const gameId = urlParams.get('id');
+    
+    if (gameIdSpan) {
+        gameIdSpan.textContent = gameId || 'Not specified';
+    }
     
     if (gameId && gameIframe) {
         // Find game data
@@ -114,16 +127,58 @@ function initPlayPage() {
                 gameCategory.textContent = `Category: ${categoryText}`;
             }
             
-            // Load game into iframe
-            gameIframe.src = game.url;
+            if (gameUrlSpan) {
+                gameUrlSpan.textContent = game.url;
+            }
+            
+            // Add error handling for iframe
+            gameIframe.onerror = function() {
+                console.error('Failed to load game iframe');
+                if (errorContainer) {
+                    errorContainer.textContent = `Failed to load game. Please try the direct link option or check your browser settings.`;
+                    errorContainer.classList.remove('hidden');
+                }
+                gameTitle.textContent = 'Error Loading Game';
+                gameDescription.textContent = 'Sorry, there was an error loading the game. Please try again later.';
+            };
+            
+            // Add load event handler
+            gameIframe.onload = function() {
+                console.log('Game iframe loaded successfully');
+                if (errorContainer) {
+                    errorContainer.classList.add('hidden');
+                }
+            };
+            
+            try {
+                // Load game into iframe
+                gameIframe.src = game.url;
+                console.log('Attempting to load game URL:', game.url);
+            } catch (error) {
+                console.error('Error setting iframe src:', error);
+                if (errorContainer) {
+                    errorContainer.textContent = `Error loading game: ${error.message}. Please try the direct link option.`;
+                    errorContainer.classList.remove('hidden');
+                }
+                gameTitle.textContent = 'Error Loading Game';
+                gameDescription.textContent = 'Sorry, there was an error loading the game. Please try again later.';
+            }
         } else {
             // Game not found
+            if (errorContainer) {
+                errorContainer.textContent = `Game with ID ${gameId} not found.`;
+                errorContainer.classList.remove('hidden');
+            }
             if (gameTitle) gameTitle.textContent = 'Game Not Found';
             if (gameDescription) gameDescription.textContent = 'Sorry, the requested game does not exist.';
             if (gameCategory) gameCategory.textContent = '';
         }
     } else {
         // No game ID provided
+        if (errorContainer) {
+            errorContainer.textContent = 'No game ID specified in URL.';
+            errorContainer.classList.remove('hidden');
+        }
         if (gameTitle) gameTitle.textContent = 'Error';
         if (gameDescription) gameDescription.textContent = 'No game ID specified.';
         if (gameCategory) gameCategory.textContent = '';

@@ -5,7 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Play Game - Game Hub</title>
     <meta name="description" content="Experience exciting games at Game Hub.">
+    <meta http-equiv="Content-Security-Policy" content="frame-src * 'self' https://*.crazygames.com https://*.sprunki.org https://sprunki.org; frame-ancestors 'self';">
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        .error-message {
+            color: #dc3545;
+            padding: 1rem;
+            margin: 1rem 0;
+            border: 1px solid #dc3545;
+            border-radius: 4px;
+            background-color: #f8d7da;
+        }
+        .debug-info {
+            font-size: 0.8rem;
+            color: #6c757d;
+            margin-top: 1rem;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -31,9 +47,17 @@
                     <p id="game-category" class="category-tag">Category: Loading...</p>
                 </div>
                 
+                <div id="error-container" class="error-message hidden"></div>
+                
                 <div class="iframe-container">
                     <iframe id="game-iframe" src="about:blank" allowfullscreen></iframe>
                 </div>
+                
+                <!-- <div class="debug-info">
+                    <p>Current URL: <span id="current-url"></span></p>
+                    <p>Game ID: <span id="game-id"></span></p>
+                    <p>Game URL: <span id="game-url"></span></p>
+                </div> -->
                 
                 <div class="game-controls">
                     <a href="games.html" class="btn back-btn">Back to Games</a>
