@@ -8,7 +8,7 @@ const games = [
         title: "Incredibox Sprunki",
         description: "A creative rhythm game that allows children to create music by combining different sound effects.",
         image: "images/Incredibox.png",
-        url: "https://sprunki.org/sprunki-incredibox.embed",
+        url: "https://www.gameflare.com/embed/incredibox-sprunki",
         category: "kids"
     },
     {
@@ -24,7 +24,7 @@ const games = [
         title: "Bloxd.io",
         description: "A multiplayer building game where you can create and explore worlds with others.",
         image: "images/Bloxd.jpg",
-        url: "https://www.crazygames.com/embed/bloxdhop-io",
+        url: "https://retrogamesonline.io/play/bloxdio",
         category: "multiplayer"
     },
     {
@@ -32,7 +32,7 @@ const games = [
         title: "Count Masters",
         description: "A casual stickman game where you need to count and collect items.",
         image: "images/Count.jpg",
-        url: "https://www.crazygames.com/embed/count-masters-stickman-games",
+        url: "https://www.gameflare.com/embed/count-masters/",
         category: "casual"
     },
     {
@@ -48,7 +48,7 @@ const games = [
         title: "Mahjongg Solitaire",
         description: "A classic puzzle game where you match and remove tiles.",
         image: "images/Mahjongg.jpg",
-        url: "https://www.crazygames.com/embed/mahjongg-solitaire",
+        url: "https://mahjong-solitaire.netlify.app",
         category: "puzzle"
     },
     {
