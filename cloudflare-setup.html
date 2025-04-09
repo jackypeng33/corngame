@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloudflare Setup Guide - Game Hub</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .guide-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        pre {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        .step {
+            margin-bottom: 30px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+        }
+        .note {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 15px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Game Hub</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="games.html">Browse Games</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="guide-container">
+        <h1>Cloudflare Setup Guide for iframes</h1>
+        <p>This guide will help you configure Cloudflare to allow iframe games to load properly on your website.</p>
+
+        <div class="note">
+            <strong>Note:</strong> You need access to your Cloudflare dashboard with administrative privileges to follow these steps.
+        </div>
+
+        <div class="step">
+            <h2>Option 1: Using Cloudflare Workers (Recommended)</h2>
+            <p>Cloudflare Workers allow you to modify HTTP headers before they reach the browser.</p>
+            
+            <h3>Step 1: Create a Cloudflare Worker</h3>
+            <p>Log in to your Cloudflare dashboard, navigate to Workers & Pages, and create a new Worker with the following code:</p>
+            <pre>
+addEventListener('fetch', event => {
+  event.respondWith(handleRequest(event.request))
+})
+
+async function handleRequest(request) {
+  // Get the original response
+  let response = await fetch(request)
+  
+  // Clone the response so we can modify it
+  let newResponse = new Response(response.body, response)
+  
+  // Add necessary security headers
+  newResponse.headers.set('Content-Security-Policy', 
+    "default-src 'self'; frame-src * https://*.crazygames.com https://*.io https://*.space; img-src 'self' data:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline';")
+  
+  newResponse.headers.set('X-Frame-Options', 'ALLOWALL')
+  
+  return newResponse
+}
+            </pre>
+
+            <h3>Step 2: Set Up Worker Routes</h3>
+            <p>Configure the Worker to run on specific routes:</p>
+            <ol>
+                <li>Go to your Cloudflare dashboard</li>
+                <li>Navigate to Workers Routes</li>
+                <li>Add a route matching: <code>yourdomain.com/play.html*</code></li>
+                <li>Add a route matching: <code>yourdomain.com/gameproxy.html*</code></li>
+                <li>Associate these routes with your Worker</li>
+            </ol>
+        </div>
+
+        <div class="step">
+            <h2>Option 2: Using Cloudflare Page Rules</h2>
+            <p>If you don't want to use Workers, you can modify security settings using Page Rules.</p>
+            
+            <h3>Step 1: Create Page Rules</h3>
+            <ol>
+                <li>Go to your Cloudflare dashboard</li>
+                <li>Navigate to Page Rules</li>
+                <li>Create a new Page Rule for: <code>yourdomain.com/play.html*</code></li>
+                <li>Set the following settings:
+                    <ul>
+                        <li>Security Level: Essentially Off</li>
+                        <li>SSL: Full</li>
+                    </ul>
+                </li>
+                <li>Create a similar rule for: <code>yourdomain.com/gameproxy.html*</code></li>
+            </ol>
+        </div>
+
+        <div class="step">
+            <h2>Option 3: Using Custom Headers</h2>
+            <p>You can also add custom headers in your Cloudflare dashboard:</p>
+            
+            <h3>Step 1: Add Custom Headers</h3>
+            <ol>
+                <li>Go to your Cloudflare dashboard</li>
+                <li>Navigate to Rules > Transform Rules</li>
+                <li>Create a new rule that matches the URL patterns: <code>yourdomain.com/play.html*</code> and <code>yourdomain.com/gameproxy.html*</code></li>
+                <li>Add these response headers:
+                    <ul>
+                        <li><code>Content-Security-Policy: default-src 'self'; frame-src * https://*.crazygames.com https://*.io https://*.space; img-src 'self' data:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline';</code></li>
+                        <li><code>X-Frame-Options: ALLOWALL</code></li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+
+        <div class="step">
+            <h2>Testing Your Setup</h2>
+            <p>After applying one of the solutions above:</p>
+            <ol>
+                <li>Clear your browser cache or use an incognito/private browsing window</li>
+                <li>Navigate to your site's game pages</li>
+                <li>Check if the games load properly in the iframes</li>
+                <li>If you still encounter issues, check the browser's developer console for specific error messages</li>
+            </ol>
+        </div>
+
+        <div class="note">
+            <p>If you're still having issues after trying these solutions, consider using our alternative approach of opening games in a new tab:</p>
+            <a href="games.html" class="btn">Go Back to Games</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Game Hub. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html> 

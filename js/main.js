@@ -227,13 +227,16 @@ function createGameCard(game) {
     // Get category display name
     let categoryText = getCategoryDisplayName(game.category);
     
+    // Create game proxy URL - this approach should work with Cloudflare
+    const gameProxyUrl = `gameproxy.html?url=${encodeURIComponent(game.url)}&title=${encodeURIComponent(game.title)}`;
+    
     card.innerHTML = `
         <img src="${game.image}" alt="${game.title}">
         <div class="game-card-content">
             <h3>${game.title}</h3>
             <span class="category-tag">${categoryText}</span>
             <p>${game.description}</p>
-            <a href="play.html?id=${game.id}" class="btn">Play Now</a>
+            <a href="${gameProxyUrl}" class="btn">Play Now</a>
         </div>
     `;
     
