@@ -3,20 +3,13 @@
  * Contains information for all games on the website
  */
 const games = [
-    {
-        id: 1,
-        title: "Incredibox Sprunki",
-        description: "A creative rhythm game that allows children to create music by combining different sound effects.",
-        image: "images/Incredibox.png",
-        url: "https://www.gameflare.com/embed/incredibox-sprunki",
-        category: "kids"
-    },
+    
     {
         id: 2,
         title: "Find the Vampire",
         description: "An exciting action game where you need to find and eliminate vampires.",
         image: "images/Find.jpg",
-        url: "https://www.crazygames.com/embed/find-the-vampire",
+        url: "https://games.crazygames.com/en_US/find-the-vampire/index.html",
         category: "action"
     },
     {
@@ -32,7 +25,7 @@ const games = [
         title: "Count Masters",
         description: "A casual stickman game where you need to count and collect items.",
         image: "images/Count.jpg",
-        url: "https://www.gameflare.com/embed/count-masters/",
+        url: "https://games.crazygames.com/en_US/count-masters-stickman-games/index.html",
         category: "casual"
     },
     {
@@ -40,7 +33,7 @@ const games = [
         title: "Apple Shooter",
         description: "An action-packed game where you shoot apples at targets.",
         image: "images/Apple.jpg",
-        url: "https://www.crazygames.com/embed/apple-shooter",
+        url: "https://games.crazygames.com/en_US/apple-shooter/index.html",
         category: "action"
     },
     {
@@ -48,30 +41,21 @@ const games = [
         title: "Mahjongg Solitaire",
         description: "A classic puzzle game where you match and remove tiles.",
         image: "images/Mahjongg.jpg",
-        url: "https://mahjong-solitaire.netlify.app",
+        url: "https://games.crazygames.com/en_US/mahjongg-solitaire/index.html",
         category: "puzzle"
     },
     {
         id: 7,
-        title: "Playground",
-        description: "An action game set in a playground environment.",
-        image: "images/Playground.png",
-        url: "https://www.crazygames.com/embed/playground",
-        category: "action"
-    },
-    {
-        id: 8,
         title: "Warzone Armor",
         description: "An action-packed war game with armored vehicles.",
         image: "images/Warzone.png",
-        url: "https://www.crazygames.com/embed/warzone-armor-gtb",
+        url: "https://games.crazygames.com/en_US/warzone-armor-gtb/index.html",
         category: "action"
     }
 ];
 
 // Categories
 const categories = [
-    { id: "kids", name: "Kids Games" },
     { id: "action", name: "Action Games" },
     { id: "puzzle", name: "Puzzle Games" },
     { id: "casual", name: "Casual Games" },
