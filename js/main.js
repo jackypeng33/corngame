@@ -22,16 +22,29 @@ document.addEventListener('DOMContentLoaded', function() {
  * Initialize home page
  */
 function initHomePage() {
-    // Display featured games (randomly select 3)
-    const featuredGamesContainer = document.getElementById('featured-games-container');
-    if (featuredGamesContainer) {
-        const shuffled = [...games].sort(() => 0.5 - Math.random());
-        const featured = shuffled.slice(0, 3);
-        
-        featured.forEach(game => {
-            featuredGamesContainer.appendChild(createGameCard(game));
+    const gameListContainer = document.getElementById('game-list');
+    if (!gameListContainer) return;
+
+    fetch('games.json')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            return response.json();
+        })
+        .then(games => {
+            if (games && games.length > 0) {
+                games.forEach(game => {
+                    gameListContainer.appendChild(createGameCard(game));
+                });
+            } else {
+                gameListContainer.innerHTML = '<p>No games found.</p>';
+            }
+        })
+        .catch(error => {
+            console.error('Error fetching or parsing game data:', error);
+            gameListContainer.innerHTML = `<p>Error loading games. Please try again later.</p><p><small>${error}</small></p>`;
         });
-    }
 }
 
 /**
@@ -89,7 +102,7 @@ function initGamesPage() {
  * Initialize game play page
  */
 function initPlayPage() {
-    const gameIframe = document.getElementById('game-iframe');
+    const gameContainer = document.getElementById('game-container');
     const gameTitle = document.getElementById('game-title');
     const gameDescription = document.getElementById('game-description');
     const gameCategory = document.getElementById('game-category');
@@ -97,112 +110,68 @@ function initPlayPage() {
     const iframeFallback = document.getElementById('iframe-fallback');
     const fallbackLink = document.getElementById('fallback-link');
     const fullscreenLink = document.getElementById('fullscreen-link');
-    
-    // Get game ID from URL
+
     const urlParams = new URLSearchParams(window.location.search);
     const gameId = urlParams.get('id');
-    
-    if (gameId && gameIframe) {
-        // Find game data
-        const game = games.find(g => g.id === parseInt(gameId));
-        
-        if (game) {
-            // Update page title
-            document.title = `${game.title} - Game Hub`;
-            
-            // Update game information
-            if (gameTitle) gameTitle.textContent = game.title;
-            if (gameDescription) gameDescription.textContent = game.description;
-            if (gameCategory) {
-                let categoryText = getCategoryDisplayName(game.category);
-                gameCategory.textContent = `Category: ${categoryText}`;
-            }
-            
-            // Setup fullscreen and fallback links
-            if (fullscreenLink) {
-                fullscreenLink.href = game.url;
-            }
-            
-            if (fallbackLink) {
-                fallbackLink.href = game.url;
-            }
-            
-            // Set a timeout to check if the iframe loads
-            let iframeLoadTimeout = setTimeout(() => {
-                // If this executes, the iframe didn't load successfully
-                console.warn('Iframe load timeout - game may be blocked by CSP');
-                if (iframeFallback) {
-                    iframeFallback.classList.remove('hidden');
-                }
-            }, 10000); // 10 seconds timeout
-            
-            // Add error handling for iframe
-            gameIframe.onerror = function(event) {
-                console.error('Failed to load game iframe', event);
-                clearTimeout(iframeLoadTimeout);
-                
-                if (errorContainer) {
-                    errorContainer.textContent = 'Failed to load game iframe due to security restrictions.';
-                    errorContainer.classList.remove('hidden');
-                }
-                
-                if (iframeFallback) {
-                    iframeFallback.classList.remove('hidden');
-                }
-            };
-            
-            // Add load event handler
-            gameIframe.onload = function() {
-                // Only consider it loaded if src is not about:blank
-                if (gameIframe.src !== 'about:blank') {
-                    console.log('Game iframe loaded successfully');
-                    clearTimeout(iframeLoadTimeout);
+
+    if (!gameId) {
+        if (gameTitle) gameTitle.textContent = '错误';
+        if (errorContainer) errorContainer.textContent = '错误: 缺少游戏 ID。';
+        return;
+    }
+
+    fetch('games.json')
+        .then(response => {
+            if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+            return response.json();
+        })
+        .then(games => {
+            const game = games.find(g => g.id === gameId);
+
+            if (game) {
+                document.title = `正在玩: ${game.title}`;
+                if (gameTitle) gameTitle.textContent = game.title;
+                if (gameDescription) gameDescription.textContent = game.description || "没有提供描述。";
+                if (gameCategory) gameCategory.textContent = game.categories && game.categories.length > 0 ? game.categories.join(', ') : '通用';
+
+                if (fullscreenLink) fullscreenLink.href = game.gameUrl;
+                if (fallbackLink) fallbackLink.href = game.gameUrl;
+
+                if (gameContainer) {
+                    const iframe = document.createElement('iframe');
+                    iframe.id = 'game-frame';
+                    iframe.src = game.gameUrl;
+                    iframe.setAttribute('allowfullscreen', '');
+                    iframe.setAttribute('frameborder', '0');
                     
-                    if (errorContainer) {
-                        errorContainer.classList.add('hidden');
-                    }
-                    
-                    if (iframeFallback) {
-                        iframeFallback.classList.add('hidden');
-                    }
+                    iframe.onload = () => {
+                        console.log('Iframe loaded successfully.');
+                        if(iframeFallback) iframeFallback.classList.add('hidden');
+                    };
+                    iframe.onerror = () => {
+                        console.error('Iframe failed to load.');
+                        if(iframeFallback) iframeFallback.classList.remove('hidden');
+                    };
+
+                    gameContainer.innerHTML = ''; // Clear loading text
+                    gameContainer.appendChild(iframe);
                 }
-            };
-            
-            try {
-                // Load game into iframe directly
-                console.log('Attempting to load game URL:', game.url);
-                gameIframe.src = game.url;
-            } catch (error) {
-                console.error('Error setting iframe src:', error);
+            } else {
+                if (gameTitle) gameTitle.textContent = '错误';
                 if (errorContainer) {
-                    errorContainer.textContent = `Error setting iframe src: ${error.message}`;
-                    errorContainer.classList.remove('hidden');
-                }
-                
-                if (iframeFallback) {
-                    iframeFallback.classList.remove('hidden');
+                     errorContainer.textContent = `错误: 找不到 ID 为 "${gameId}" 的游戏。`;
+                     errorContainer.classList.remove('hidden');
                 }
             }
-        } else {
-            // Game not found
+        })
+        .catch(error => {
+            console.error('加载游戏数据失败:', error);
+            if (gameTitle) gameTitle.textContent = '错误';
             if (errorContainer) {
-                errorContainer.textContent = `Game with ID ${gameId} not found.`;
+                errorContainer.textContent = '加载游戏配置失败，请重试。';
                 errorContainer.classList.remove('hidden');
             }
-            if (gameTitle) gameTitle.textContent = 'Game Not Found';
-            if (gameDescription) gameDescription.textContent = 'Sorry, the requested game does not exist.';
-            if (gameCategory) gameCategory.textContent = '';
-        }
-    } else {
-        // No game ID provided
-        if (errorContainer) {
-            errorContainer.textContent = 'No game ID specified in URL.';
-            errorContainer.classList.remove('hidden');
-        }
-        if (gameTitle) gameTitle.textContent = 'Error';
-        if (gameDescription) gameDescription.textContent = 'No game ID specified.';
-        if (gameCategory) gameCategory.textContent = '';
-    }
+        });
 }
 
 /**
@@ -224,19 +193,18 @@ function createGameCard(game) {
     const card = document.createElement('div');
     card.className = 'game-card';
     
-    // Get category display name
-    let categoryText = getCategoryDisplayName(game.category);
+    // In game.json, categories is an array. We'll display the first one.
+    const categoryText = game.categories && game.categories.length > 0 ? game.categories[0] : 'General';
     
-    // Create game proxy URL - this approach should work with Cloudflare
-    const gameProxyUrl = `gameproxy.html?url=${encodeURIComponent(game.url)}&title=${encodeURIComponent(game.title)}`;
+    const gamePlayUrl = `play.html?id=${encodeURIComponent(game.id)}`;
     
     card.innerHTML = `
-        <img src="${game.image}" alt="${game.title}">
+        <img src="${game.icon}" alt="${game.title}" onerror="this.src='https://via.placeholder.com/220x150/000/fff?text=No+Image';">
         <div class="game-card-content">
             <h3>${game.title}</h3>
             <span class="category-tag">${categoryText}</span>
-            <p>${game.description}</p>
-            <a href="${gameProxyUrl}" class="btn">Play Now</a>
+            <p>${game.description || ''}</p>
+            <a href="${gamePlayUrl}" class="btn">Play Now</a>
         </div>
     `;
     
@@ -301,4 +269,44 @@ function applyFilters(searchInput, filterButtons, container, noResults) {
     
     // Display filtered games
     displayGames(filteredGames, container, noResults);
-} 
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    const gameListContainer = document.getElementById('game-list');
+
+    // Fetch game data from the JSON file
+    fetch('games.json')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            return response.json();
+        })
+        .then(games => {
+            if (games.length === 0) {
+                gameListContainer.innerHTML = '<p>没有找到游戏。</p>';
+                return;
+            }
+            // Clear any existing content
+            gameListContainer.innerHTML = '';
+            // Create a card for each game
+            games.forEach(game => {
+                const gameCard = document.createElement('a');
+                gameCard.href = `game.html?id=${encodeURIComponent(game.id)}`;
+                gameCard.className = 'game-card';
+
+                gameCard.innerHTML = `
+                    <img src="${game.icon}" alt="${game.title}" class="game-card__image" onerror="this.src='https://via.placeholder.com/220x150?text=No+Image'">
+                    <div class="game-card__content">
+                        <h3 class="game-card__title">${game.title}</h3>
+                        <p class="game-card__description">${game.description}</p>
+                    </div>
+                `;
+                gameListContainer.appendChild(gameCard);
+            });
+        })
+        .catch(error => {
+            console.error('无法加载游戏数据:', error);
+            gameListContainer.innerHTML = '<p>加载游戏列表失败，请稍后重试。</p>';
+        });
+}); 

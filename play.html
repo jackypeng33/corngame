@@ -1,92 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Play Game - Game Hub</title>
-    <meta name="description" content="Experience exciting games at Game Hub.">
+    <title>正在玩...</title>
     <link rel="stylesheet" href="css/style.css">
     <style>
-        .error-message {
-            color: #dc3545;
-            padding: 1rem;
-            margin: 1rem 0;
-            border: 1px solid #dc3545;
-            border-radius: 4px;
-            background-color: #f8d7da;
-        }
-        .iframe-fallback {
-            text-align: center;
-            padding: 2rem;
-            background-color: #f8f9fa;
-            border-radius: 8px;
-            margin: 1rem 0;
-        }
-        .iframe-fallback .btn {
-            margin-top: 1rem;
-        }
-        .fullscreen-btn {
-            text-align: center;
-            margin-top: 1rem;
+        /* Ensure body and html take full height and have no margin */
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden; /* Hide scrollbars */
         }
     </style>
 </head>
 <body>
     <header>
-        <div class="container">
-            <div class="logo">
-                <h1>Game Hub</h1>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="games.html">Browse Games</a></li>
-                </ul>
-            </nav>
-        </div>
+        <h1 id="game-title">正在加载游戏...</h1>
     </header>
-
     <main>
-        <section class="game-play">
-            <div class="container">
-                <h2 id="game-title">Loading game...</h2>
-                <div class="game-details">
-                    <p id="game-description">Loading game details...</p>
-                    <p id="game-category" class="category-tag">Category: Loading...</p>
-                </div>
-                
-                <div id="error-container" class="error-message hidden"></div>
-                
-                <div class="iframe-container">
-                    <!-- Simplified iframe without sandbox attributes -->
-                    <iframe id="game-iframe" src="about:blank" allowfullscreen title="Game"></iframe>
-                </div>
-                
-                <div class="fullscreen-btn">
-                    <a id="fullscreen-link" href="#" target="_blank" rel="noopener noreferrer" class="btn">Play Fullscreen</a>
-                </div>
-                
-                <div id="iframe-fallback" class="iframe-fallback hidden">
-                    <h3>Unable to load game in this page</h3>
-                    <p>Due to security restrictions, we're unable to load this game directly in our website.</p>
-                    <p>Click the button below to open the game in a new window:</p>
-                    <a id="fallback-link" href="#" target="_blank" rel="noopener noreferrer" class="btn">Open Game in New Window</a>
-                </div>
-                
-                <div class="game-controls">
-                    <a href="games.html" class="btn back-btn">Back to Games</a>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Game Hub. All rights reserved.</p>
+        <div id="game-container" class="game-frame-container">
+            <!-- Iframe will be inserted here -->
         </div>
-    </footer>
-
-    <script src="js/data.js"></script>
+        <div id="game-details">
+            <p id="game-description"></p>
+            <p><strong>分类:</strong> <span id="game-category">N/A</span></p>
+            <div id="error-container" class="hidden"></div>
+            <div id="iframe-fallback" class="hidden">
+                <p>如果游戏无法加载，您可以尝试直接打开：</p>
+                <a id="fallback-link" href="#" target="_blank" class="btn">直接打开</a>
+            </div>
+        </div>
+        <div class="controls">
+             <a id="fullscreen-link" href="#" target="_blank" class="btn">全屏模式</a>
+             <a href="index.html" class="btn">返回首页</a>
+        </div>
+    </main>
+    
     <script src="js/main.js"></script>
 </body>
 </html> 

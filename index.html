@@ -1,68 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game Hub - Online Gaming Platform</title>
-    <meta name="description" content="Experience various exciting games for free at Game Hub, including action, puzzle, strategy and more.">
+    <title>游戏大厅</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-        <div class="container">
-            <div class="logo">
-                <h1>Game Hub</h1>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="games.html">Browse Games</a></li>
-                </ul>
-            </nav>
-        </div>
+        <h1>游戏中心</h1>
+        <p>发现和畅玩最新、最热门的 HTML5 游戏</p>
     </header>
-
     <main>
-        <section class="hero">
-            <div class="container">
-                <h2>Welcome to Game Hub</h2>
-                <p>Explore our curated collection of games and start your gaming journey!</p>
-                <a href="games.html" class="btn">Start Exploring</a>
-            </div>
-        </section>
-
-        <section class="featured-games">
-            <div class="container">
-                <h2>Featured Games</h2>
-                <div class="game-grid" id="featured-games-container">
-                    <!-- Featured games will be dynamically populated here -->
-                </div>
-                <div class="center">
-                    <a href="games.html" class="btn">View All Games</a>
-                </div>
-            </div>
-        </section>
-
-        <section class="categories">
-            <div class="container">
-                <h2>Game Categories</h2>
-                <div class="category-list">
-                    <a href="games.html?category=action" class="category-item">Action Games</a>
-                    <a href="games.html?category=multiplayer" class="category-item">Multiplayer Games</a>
-                    <a href="games.html?category=casual" class="category-item">Casual Games</a>
-                    <a href="games.html?category=puzzle" class="category-item">Puzzle Games</a>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Game Hub. All rights reserved.</p>
+        <div id="game-list" class="game-grid">
+            <!-- 游戏卡片将由 JavaScript 动态插入这里 -->
         </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 游戏平台</p>
     </footer>
-
-    <script src="js/data.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
