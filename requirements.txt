@@ -1,4 +1,2 @@
-cloudscraper
-beautifulsoup4
-selenium
-webdriver-manager 
+requests
+tqdm 

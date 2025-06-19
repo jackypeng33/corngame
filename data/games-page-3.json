@@ -1,0 +1,902 @@
+[
+  {
+    "id": "cards-klondike-solitaire-a9ddfe",
+    "title": "Cards: Klondike Solitaire",
+    "description": "A classic card game known for its simple and fun mechanics. If you love solitaire games, then this game is just for you! A famous card puzzle game that is popular among players all over the world.\nPerfectly relaxing!",
+    "icon": "https://img.gamedistribution.com/a9ddfe71a4624aaba548115221ff8856-512x384.jpg",
+    "gameUrl": "https://html5.gamedistribution.com/a9ddfe71a4624aaba548115221ff8856/",
+    "categories": [
+      "Cards"
+    ],
+    "tags": [
+      "1player",
+      "2d",
+      "classic",
+      "logic",
+      "solitaire",
+      "No Blood"
+    ]
+  },
+  {
+    "id": "chill-clicker-a08dc1",
+    "title": "Chill Clicker",
+    "description": "Chill Clicker is a clicker game where you multiply the Chill Capybara population by clicking. You can buy various upgrades to increase the output of Chill Capybaras, change the weather, and unlock new skins to make you the coolest Chill Capybara in town.",
+    "icon": "https://img.gamedistribution.com/a08dc120b3864dc19d4fc36e5bed5210-512x512.jpg",
+    "gameUrl": "https://html5.gamedistribution.com/a08dc120b3864dc19d4fc36e5bed5210/",
+    "categories": [
+      "Adventure"
+    ],
+    "tags": [
+      "idle",
+      "relaxing",
+      "clicker",
+      "Kids Friendly",
+      "No Blood"
+    ]
+  },
+  {
+    "id": "kitkat-puzzle-763004",
+    "title": "Kitkat Puzzle",
+    "description": "Enter the world of Kitkat Puzzle, a captivating and intricate pin puzzle game where your strategic thinking and creativity are put to the test.\n\nThe mission is straightforward - unlock kitkat holes to make these chocolate bars fall in the correct sequence. Sounds simple, yet with unlimited levels of varying complexity, it promises an intriguing brain-teasing journey.",
+    "icon": "https://img.gamedistribution.com/763004a542884fe4b20dc7d12e1ca0f9-512x384.jpg",
+    "gameUrl": "https://html5.gamedistribution.com/763004a542884fe4b20dc7d12e1ca0f9/",
+    "categories": [
+      "Puzzle",
+      "Casual"
+    ],
+    "tags": [
+      "1player",
+      "Kids Friendly",
+      "No Blood"
+    ]
+  },
+  {
+    "id": "italian-brainrot-quiz-d2e5b8",
+    "title": "Italian Brainrot Quiz",
+    "description": "Italian Brainrot Quiz is a chaotic meme-guessing game where you match bizarre names to iconic brainrot characters! From Tralalero Tralala to Bombardiro Crocodilo and Tung Tung Tung Sahur – can you guess them all? Each round is a wild ride through surreal Italian meme culture. Laugh, confuse your friends, and become the ultimate Brainrot Champion. Spaghetti logic guaranteed. Ready to play?",
+    "icon": "https://img.gamedistribution.com/d2e5b8969a24463286ba074724014336-512x384.jpg",
+    "gameUrl": "https://html5.gamedistribution.com/d2e5b8969a24463286ba074724014336/",
+    "categories": [
+      "Quiz"
+    ],
+    "tags": [
+      "memory",
+      "thinking",
+      "timekiller",
+      "top",
+      "Kids Friendly",
+      "No Blood",
+      "LOL"
+    ]
+  },
+  {
+    "id": "brainrot-merge-drop-puzzles-5b723c",
+    "title": "Brainrot Merge Drop Puzzles",
+    "description": "Drop and merge Italian Brainrot. Trallallero Trallala, Tum Tum Tum Saur, Boneca Ambalabu and more. Play funny memes. Drag and drop memes.",
+    "icon": "https://img.gamedistribution.com/5b723cee8b384026a6b978dcd019f975-512x384.jpg",
+    "gameUrl": "https://html5.gamedistribution.com/5b723cee8b384026a6b978dcd019f975/",
+    "categories": [
+      "Merge"
+    ],
+    "tags": [
+      "colorful",
+      "kidgames",
+      "Kids Friendly",
+      "No Blood"
+    ]
+  },
+  {
+    "id": "gun-rush-3589a2",
+    "title": "Gun Rush",
+    "description": "Begin an action-packed gun battle runner. Gun Rush is an electrifying arcade game that combines gun merging with platform running. Run forward, avoid obstacles, collect weapons, and blast your way to the finish line with ultimate firepower. Control the direction of your gun, shooting power, ATK speed, and Range to increase its value. Increase your damage by using high-value doors.",
+    "icon": "https://img.gamedistribution.com/3589a28d3b8e4ac08b304741858a3e80-512x384.jpg",
+    "gameUrl": "https://html5.gamedistribution.com/3589a28d3b8e4ac08b304741858a3e80/",
+    "categories": [
+      "Casual"
+    ],
+    "tags": [
+      "running",
+      "shoot-em-up",
+      "parkour",
+      "battlefield",
+      "Kids Friendly",
+      "No Blood"
+    ]
+  },
+  {
+    "id": "metro-escape-1e58c5",
+    "title": "Metro Escape",
+    "description": "On Metro escape you must search the room for items that will help you escape. Search for itens in the metro and use them to solve the puzzles. Look carefully at the various patterns around the metro and solve the riddles. Good luck to search for your way to escape!",
+    "icon": "https://img.gamedistribution.com/1e58c5988fb44962a4cd120615d1ca6a-1280x720.jpg",
+    "gameUrl": "https://html5.gamedistribution.com/1e58c5988fb44962a4cd120615d1ca6a/",
+    "categories": [
+      "Puzzle"
+    ],
+    "tags": [
+      "escape",
+      "logic",
+      "Kids Friendly",
+      "No Blood",
+      "point-and-click"
+    ]
+  },
+  {
+    "id": "capybara-go-63e8c2",
+    "title": "Capybara Go!",
+    "description": "Enter the wonderful world of Capybara. In Capybara Go, begin a strategic adventure. You'll be forming and commanding your own little Capybara army. Defeat your opponents and conquer everything through strategy and combat. Lay out your Capybara's to take advantage of each one's strengths and use strategy to defeat powerful enemies.",
+    "icon": "https://img.gamedistribution.com/63e8c2d0709e452f842f261a7c9f43f9-512x512.jpg",
+    "gameUrl": "https://html5.gamedistribution.com/63e8c2d0709e452f842f261a7c9f43f9/",
+    "categories": [
+      "Adventure"
+    ],
+    "tags": [
+      "army",
+      "defence",
+      "enemies",
+      "battlefield",
+      "Kids Friendly",
+      "No Blood"
+    ]
+  },
+  {
+    "id": "idle-market-tycoon-cee7d5",
+    "title": "Idle Market Tycoon",
+    "description": "Grow your idle market, hire managers, and earn money even offline!\nIdle Market Tycoon is a fun and addictive idle simulation game where you build and manage your own shopping empire. Start with a small stall, grow your business, hire smart managers, and upgrade every department to attract more customers and earn profits – even while you're offline!\n? From fruit stands to electronic stores, expand your marketplace step by step and become the ultimate market tycoon.",
+    "icon": "https://img.gamedistribution.com/cee7d55ba3c94cd3b5a7bc9f5c9be674-512x384.jpg",
+    "gameUrl": "https://html5.gamedistribution.com/cee7d55ba3c94cd3b5a7bc9f5c9be674/",
+    "categories": [
+      "Puzzle",
+      "Simulation"
+    ],
+    "tags": [
+      "1player",
+      "supermarket",
+      "Kids Friendly",
+      "No Blood"
+    ]
+  },
+  {
+    "id": "merge-fellas-online-edd77c",
+    "title": "Merge Fellas Online",
+    "description": "Enjoy the Italian Brainrot meme world in this Merge game. Immerse yourself in the Italian Brainrot world and merge identical characters to accumulate points and reach the highest score. A simple and easy mechanic, drop characters together to form higher-value ones, providing rewards with each successful merge.  Solve the puzzle and merge all the pets!\n",
+    "icon": "https://img.gamedistribution.com/edd77cc1b64e43b28c3d6040c90a589e-512x384.jpg",
+    "gameUrl": "https://html5.gamedistribution.com/edd77cc1b64e43b28c3d6040c90a589e/",
+    "categories": [
+      "Merge"
+    ],
+    "tags": [
+      "1player",
+      "agent",
+      "Kids Friendly",
+      "No Blood"
+    ]
+  },
+  {
+    "id": "geometry-vibes-monster-6db1b1",
+    "title": "Geometry Vibes Monster",
+    "description": "Geometry Vibes Monster is a reaction-based arcade game where you must dodge incoming obstacles, spikes, and battle against a variety of unique monsters. Each monster features distinct attack patterns that you must skillfully avoid. Your main goal is to navigate your spaceship as far as possible while surviving the onslaught of attacks.",
+    "icon": "https://img.gamedistribution.com/6db1b18f83524462ad7e5d23792552db-512x384.jpg",
+    "gameUrl": "https://html5.gamedistribution.com/6db1b18f83524462ad7e5d23792552db/",
+    "categories": [
+      "Adventure"
+    ],
+    "tags": [
+      "geometry",
+      "monster",
+      "space",
+      "2players",
+      "3players",
+      "Kids Friendly",
+      "No Blood"
+    ]
+  },
+  {
+    "id": "patterns-d2469e",
+    "title": "Patterns",
+    "description": "Help Ellie recreate magical patterns using grass, fire, clouds, and more elements as you uncover the hidden order of each level.",
+    "icon": "https://img.gamedistribution.com/d2469e2bac9247108bd72573893b76fe-512x512.jpg",
+    "gameUrl": "https://html5.gamedistribution.com/d2469e2bac9247108bd72573893b76fe/",
+    "categories": [
+      "Puzzle",
+      "Casual"
+    ],
+    "tags": [
+      "animal",
+      "block",
+      "fire",
+      "forest",
+      "magic",
+      "Kids Friendly",
+      "No Blood"
+    ]
+  },
+  {
+    "id": "italian-brainrot-obby-parkour-ad14e4",
+    "title": "Italian Brainrot Obby Parkour",
+    "description": "Italian Brainrot Obby Parkour is a wild and hilarious 2 player platforming experience that blends meme-fueled chaos with classic obby parkour mechanics. Inspired by games like Tower of Hell, this title brings the unpredictable humor of the Italian brainrot meme universe into a 3D climbing challenge.\n\nAvailable characters are: \n-Tung Tung Sahur\n-Brr Brr Patapim\n-Burbaloni Luliloli\n-Frigo Camelo\n-Girafa Celestre\n-Lirili Larila\n-Orangutini Annaucini\n-Tralalero Tralala\n-Vaca Saturno Saturnita",
+    "icon": "https://img.gamedistribution.com/ad14e488375b4e41af52a4617f6837d0-512x384.jpg",
+    "gameUrl": "https://html5.gamedistribution.com/ad14e488375b4e41af52a4617f6837d0/",
+    "categories": [
+      "Casual",
+      "Simulation"
+    ],
+    "tags": [
+      "platformer",
+      "parkour",
+      "roblox",
+      "climb",
+      "2players",
+      "Kids Friendly",
+      "No Blood"
+    ]
+  },
+  {
+    "id": "hyper-nurse-hospital-games-afcd01",
+    "title": "Hyper Nurse: Hospital Games",
+    "description": "Get ready to navigate through the fast-paced world of healthcare, where every second counts. Your mission as a hyper nurse is to provide exceptional care to patients, manage critical situations, and ensure the smooth operation of the hospital. Get ready to put your multitasking skills to the test as you juggle multiple tasks and make crucial decisions in hyper nurse: hospital games.",
+    "icon": "https://img.gamedistribution.com/afcd01218ad8495c847c1475566e7e10-512x512.jpg",
+    "gameUrl": "https://html5.gamedistribution.com/afcd01218ad8495c847c1475566e7e10/",
+    "categories": [
+      "Adventure"
+    ],
+    "tags": [
+      "hospital",
+      "3d",
+      "No Blood"
+    ]
+  },
+  {
+    "id": "ragdoll-bob-puzzle-4a82c7",
+    "title": "Ragdoll Bob Puzzle",
+    "description": "Help Bob reach his goal in Ragdoll Bob Puzzle, a quirky and fun 2D puzzle game that challenges your brain and creativity! Bob is a floppy ragdoll who needs your help to get to the endpoint while collecting as many stars as possible along the way. But here’s the twist—you can’t control Bob directly. Instead, you must guide his path by placing a limited number of blocks and objects in the right spots to create a safe and clever route.",
+    "icon": "https://img.gamedistribution.com/4a82c78f7515460bbc51686fa598231a-512x384.jpg",
+    "gameUrl": "https://html5.gamedistribution.com/4a82c78f7515460bbc51686fa598231a/",
+    "categories": [
+      "Puzzle",
+      "Strategy"
+    ],
+    "tags": [
+      "2d",
+      "logic",
+      "physics",
+      "ragdoll",
+      "thinking",
+      "Kids Friendly",
+      "No Blood"
+    ]
+  },
+  {
+    "id": "my-pet-care-salon-d25314",
+    "title": "My Pet Care Salon",
+    "description": "My Pet Care Salon invites you to run your very own pet spa! Groom, pamper, and style a variety of adorable pets with fun, interactive activities. From bath time and nail trimming to trendy haircuts and accessory styling, provide the best care for your furry clients. Manage your salon, meet different pets, and earn rewards as you create a welcoming environment for pets and their owners. Transform your pet care dreams into reality and become the ultimate pet stylist!",
+    "icon": "https://img.gamedistribution.com/d25314c77d8a4931b7d3c7a8d7ee35ea-512x384.jpg",
+    "gameUrl": "https://html5.gamedistribution.com/d25314c77d8a4931b7d3c7a8d7ee35ea/",
+    "categories": [
+      "Casual"
+    ],
+    "tags": [
+      "pet",
+      "spa",
+      "kidgames",
+      "Kids Friendly",
+      "No Blood"
+    ]
+  },
+  {
+    "id": "color-block-jam-0e678f",
+    "title": "Color Block Jam",
+    "description": "Color Block Jam – an exciting puzzle game! Move the colored blocks, solve logic challenges, and complete levels. The game has many levels, from simple tasks to real brain teasers.",
+    "icon": "https://img.gamedistribution.com/0e678f2a73174718b682054a8b24ab4b-512x384.jpg",
+    "gameUrl": "https://html5.gamedistribution.com/0e678f2a73174718b682054a8b24ab4b/",
+    "categories": [
+      "Puzzle",
+      "Casual"
+    ],
+    "tags": [
+      "block",
+      "color",
+      "sliding-puzzle",
+      "Kids Friendly",
+      "No Blood"
+    ]
+  },
+  {
+    "id": "match-3d-puzzle-saga-96d446",
+    "title": "Match 3D Puzzle Saga",
+    "description": "Ready to match and collect? Solve puzzles to earn coins, unlock powerful power-ups and complete daily challenges to grab extra rewards and sweet bonuses. The more you play, the more opportunities you have to boost your score!\n",
+    "icon": "https://img.gamedistribution.com/96d4461569d24b6dafd883f59710f03f-512x384.jpg",
+    "gameUrl": "https://html5.gamedistribution.com/96d4461569d24b6dafd883f59710f03f/",
+    "categories": [
+      "Puzzle"
+    ],
+    "tags": [
+      "colorful",
+      "combine",
+      "logic",
+      "matching",
+      "3d",
+      "Kids Friendly",
+      "No Blood"
+    ]
+  },
+  {
+    "id": "strykon-593616",
+    "title": "Strykon",
+    "description": "Strykon is a mobile FPS game with exciting missions and battles. Play different modes like Deathmatch, Team Deathmatch, and Free-for-All, where your goal is to survive.\nChoose from many weapons, like pistols, rifles, shotguns, and snipers. Each gun has its own style. Enjoy great graphics, realistic sound, and easy controls. Earn rewards with the Battle Pass to keep the game interesting. Whether you complete missions or fight enemies, this shooter is full of action anytime, anywhere!",
+    "icon": "https://img.gamedistribution.com/59361631a2614fc095ef2a1740e02d78-512x384.jpg",
+    "gameUrl": "https://html5.gamedistribution.com/59361631a2614fc095ef2a1740e02d78/",
+    "categories": [
+      "Shooter"
+    ],
+    "tags": [
+      "1player",
+      "guns",
+      "war",
+      "3d"
+    ]
+  },
+  {
+    "id": "sort-puzzle---nuts-and-bolts-1181e8",
+    "title": "Sort Puzzle - Nuts and Bolts",
+    "description": "Play Sort Puzzle - Nuts and Bolts, a free and addictive sorting game! Train your brain by stacking nuts of the same color. Simple yet challenging, it's the perfect casual game to relax and sharpen your logic skills. Play now and start sorting!",
+    "icon": "https://img.gamedistribution.com/1181e80fccb44318a69756c736bfbda7-512x384.jpg",
+    "gameUrl": "https://html5.gamedistribution.com/1181e80fccb44318a69756c736bfbda7/",
+    "categories": [
+      "Puzzle",
+      "Casual"
+    ],
+    "tags": [
+      "challenge",
+      "logic",
+      "Kids Friendly",
+      "No Blood"
+    ]
+  },
+  {
+    "id": "starry-style-dorama-of-dream-25c257",
+    "title": "Starry Style Dorama of Dream",
+    "description": "Welcome to an exciting journey into the world of Korean doramas heroes! Here you can become a stylist for two aspiring young film actors: a young actress whose heart beats to the rhythm of romantic stories, and a charismatic actor whose smile can melt even the coldest hearts. You will be able to choose from a variety of outfits, accessories and hairstyles, creating unique images that emphasize the individuality of your characters.",
+    "icon": "https://img.gamedistribution.com/25c2572b4fbc4e77ae34ebfa86070a5f-512x384.jpg",
+    "gameUrl": "https://html5.gamedistribution.com/25c2572b4fbc4e77ae34ebfa86070a5f/",
+    "categories": [
+      "Dress-up"
+    ],
+    "tags": [
+      "actress",
+      "celebrity",
+      "dress",
+      "easter",
+      "makeup",
+      "Kids Friendly",
+      "No Blood"
+    ]
+  },
+  {
+    "id": "big-block-blast-058a3f",
+    "title": "Big Block Blast",
+    "description": "Place triangles and blocks to build 2x2 BIG BLOCKS! Drag and drop shapes into the grid to complete full squares made of triangles. Matching colors gives you bonus points, so in Big Block Blast you must aim for smart and colorful combos!\nSome blocks have special powers and can even be placed on top of others. Use them strategically to unlock new moves and clear space. Big Block Blast is a simple to play game but tricky to master! How many BIG BLOCKS can you make?\n",
+    "icon": "https://img.gamedistribution.com/058a3fd0d58949be9b79e666de9ac36d-512x384.jpg",
+    "gameUrl": "https://html5.gamedistribution.com/058a3fd0d58949be9b79e666de9ac36d/",
+    "categories": [
+      "Puzzle"
+    ],
+    "tags": [
+      "block",
+      "geometry",
+      "blast",
+      "shape",
+      "Kids Friendly",
+      "No Blood"
+    ]
+  },
+  {
+    "id": "looper-c1b8bf",
+    "title": "Looper",
+    "description": "Looper is a joyous and melodious music game that tests your sense of rhythm and timing. Get ready to start tapping your way through a colorful universe of beats and melodies! With hundreds of unique levels, Looper is the perfect game to soothe your puzzling needs.\n\nAs you progress, the constellations become more complex, and the beats more satisfying. But be warned, mistiming a tap could lead to an epic crash and burn - so make sure to bring your A-game!",
+    "icon": "https://img.gamedistribution.com/c1b8bf4a05ad4f9ea6aa3ad33aafabdc-1280x720.jpg",
+    "gameUrl": "https://html5.gamedistribution.com/c1b8bf4a05ad4f9ea6aa3ad33aafabdc/",
+    "categories": [
+      "Puzzle"
+    ],
+    "tags": [
+      "music",
+      "Kids Friendly",
+      "No Blood"
+    ]
+  },
+  {
+    "id": "football-rush-3d-116e0e",
+    "title": "Football Rush 3D",
+    "description": "Football Rush 3d is a fast-paced, one-touch soccer game that puts you in the boots of a solo football hero. Forget complex controls—just tap, strike, and score! Whether you’re curving shots from midfield or charging down the pitch with speed boosts, every moment is packed with action.",
+    "icon": "https://img.gamedistribution.com/116e0e450a374f24877fa02ad98a2e62-512x384.jpg",
+    "gameUrl": "https://html5.gamedistribution.com/116e0e450a374f24877fa02ad98a2e62/",
+    "categories": [
+      "Football"
+    ],
+    "tags": [
+      "ball",
+      "run",
+      "sport",
+      "tournament",
+      "headsoccer",
+      "Kids Friendly",
+      "No Blood"
+    ]
+  },
+  {
+    "id": "delta-force-airborne-caaa90",
+    "title": "Delta Force Airborne",
+    "description": "This game offers a whole new level of graphics and sound design that completely immerses you in a realistic atmosphere of battles. \nShoot and use tactical thinking to overcome obstacles and achieve victory together with your team. \nExplore a variety of maps, each of which is full of unique opportunities and strategic points.\nBecome a master of team play by coordinating with your teammates and using different character classes to create the perfect strategy.",
+    "icon": "https://img.gamedistribution.com/caaa9021c03b438db35ae532051e2e24-512x384.jpg",
+    "gameUrl": "https://html5.gamedistribution.com/caaa9021c03b438db35ae532051e2e24/",
+    "categories": [
+      "Shooter"
+    ],
+    "tags": [
+      "army",
+      "guns",
+      "war",
+      "weapons",
+      "arcade"
+    ]
+  },
+  {
+    "id": "powerwash-simulator---3d-wash-0a3fff",
+    "title": "Powerwash Simulator - 3D Wash",
+    "description": "There’s no stain too tough, no dirt too thick that you can’t handle. So gear up, point your washer, and get ready to bring the shine back to everything around you.",
+    "icon": "https://img.gamedistribution.com/0a3fff5df1f84704bd585c30c1277338-512x384.jpg",
+    "gameUrl": "https://html5.gamedistribution.com/0a3fff5df1f84704bd585c30c1277338/",
+    "categories": [
+      "Casual"
+    ],
+    "tags": [
+      "1player",
+      "aim",
+      "cleaning",
+      "No Blood"
+    ]
+  },
+  {
+    "id": "mega-ramp-car-stunts-5561eb",
+    "title": "Mega Ramp Car Stunts",
+    "description": "Get ready for the ultimate stunt-driving challenge in Mega Ramp Car Stunts! Take control of powerful cars and race down sky-high mega ramps to perform mind-blowing jumps, flips, and tricks. Defy gravity as you soar through the air and land like a pro on impossible tracks.\n\nWith dynamic gameplay, extreme stunts, and intense visuals, this is the stunt arena where only the boldest drivers survive!",
+    "icon": "https://img.gamedistribution.com/5561ebaa420443249301fe90a36c4e95-512x384.jpg",
+    "gameUrl": "https://html5.gamedistribution.com/5561ebaa420443249301fe90a36c4e95/",
+    "categories": [
+      "Racing & Driving"
+    ],
+    "tags": [
+      "car",
+      "Kids Friendly",
+      "No Blood"
+    ]
+  },
+  {
+    "id": "clap-clap-nightmare-eb6218",
+    "title": "Clap Clap Nightmare",
+    "description": "Clap Clap is a short indie horror game that puts you in the shoes of a house sitter, experiencing strange occurrences in a seemingly ordinary home.",
+    "icon": "https://img.gamedistribution.com/eb62182aede741489578928dd689e273-512x512.jpg",
+    "gameUrl": "https://html5.gamedistribution.com/eb62182aede741489578928dd689e273/",
+    "categories": [
+      "Adventure",
+      ".IO"
+    ],
+    "tags": [
+      "endless",
+      "escape",
+      "horror",
+      "roomescape",
+      "scary",
+      "Kids Friendly",
+      "No Blood"
+    ]
+  },
+  {
+    "id": "capybara-block-drop-448e8a",
+    "title": "Capybara Block Drop",
+    "description": "Capybara Block Drop is a fast-paced, brain-teasing puzzle game where merging numbers and staying calm under pressure is the key to survival.\n\nDrop numbered blocks into columns, combine matching tiles, and clear space with big combos.\nBut watch out, if the board fills up, it’s game over, and your capybara buddy might just lose his cool!\n\nWith colorful visuals and satisfying number-merging mechanics, Capybara Block Drop delivers endless strategic fun wrapped in a charming, lighthearted package.",
+    "icon": "https://img.gamedistribution.com/448e8a5afd0f43b6a4340b92c10adb83-512x384.jpg",
+    "gameUrl": "https://html5.gamedistribution.com/448e8a5afd0f43b6a4340b92c10adb83/",
+    "categories": [
+      "Puzzle",
+      "Casual"
+    ],
+    "tags": [
+      "animal",
+      "block",
+      "color",
+      "cute",
+      "2048",
+      "Kids Friendly",
+      "No Blood"
+    ]
+  },
+  {
+    "id": "blocks-stack-rush-d3f62b",
+    "title": "Blocks Stack Rush",
+    "description": "Enjoy an addictive stacking adventure. In Blocks Stack Rush, you’ll control a little block character running and begin a fun pixelated journey. Collect blocks, stack them high and race against time to build the perfect picture. You need to align each block and keep putting together the complete picture.",
+    "icon": "https://img.gamedistribution.com/d3f62b226076450db3ee3999d2111cc1-512x384.jpg",
+    "gameUrl": "https://html5.gamedistribution.com/d3f62b226076450db3ee3999d2111cc1/",
+    "categories": [
+      "Adventure"
+    ],
+    "tags": [
+      "block",
+      "build",
+      "pixel",
+      "stack",
+      "Kids Friendly",
+      "No Blood"
+    ]
+  },
+  {
+    "id": "pops-quest-95255a",
+    "title": "Pops Quest",
+    "description": "In this story-based platformer, you'll step into the shoes of a heroic protagonist driven by an undying love for their child. Experience the perfect fusion of action and platforming as Pop's Quest takes you on a high-octane adventure. With its fast-paced gameplay levels designed, you'll be engrossed in a world that demands agility, strategy, and quick reflexes. As you progress, you'll be emotionally invested and driven to save your child from danger.",
+    "icon": "https://img.gamedistribution.com/95255a7e37364fee8761658ab51a35eb-512x512.jpg",
+    "gameUrl": "https://html5.gamedistribution.com/95255a7e37364fee8761658ab51a35eb/",
+    "categories": [
+      "Adventure",
+      "Agility"
+    ],
+    "tags": [
+      "journey",
+      "mission",
+      "platformer",
+      "rescue",
+      "story",
+      "Kids Friendly",
+      "No Blood"
+    ]
+  },
+  {
+    "id": "sticker-puzzle-book-4a58b4",
+    "title": "Sticker Puzzle Book",
+    "description": "Step into the captivating world of Sticker Puzzle, where creativity and strategy come together in a beautifully immersive experience. Explore a vibrant sticker book filled with artistic challenges, visual storytelling, and mind-bending puzzles. Designed as a peaceful chromatic retreat, Sticker Puzzle blends the calming satisfaction of sticker art with the engaging thrill of strategic problem-solving — the perfect harmony of relaxation and mental stimulation.",
+    "icon": "https://img.gamedistribution.com/4a58b4ef028242a8b33897ecbafc8648-512x512.jpg",
+    "gameUrl": "https://html5.gamedistribution.com/4a58b4ef028242a8b33897ecbafc8648/",
+    "categories": [
+      "Puzzle"
+    ],
+    "tags": [
+      "collect",
+      "matching",
+      "Kids Friendly",
+      "No Blood"
+    ]
+  },
+  {
+    "id": "vortex-io-82a430",
+    "title": "Vortex io",
+    "description": "Play Vortex.io for free! Swallow everything in your path and become the biggest vortex in this fast-paced io game.\n\nVortex.io is a competitive .io game where you control a growing vortex that can swallow objects, vehicles, and even other players. As you absorb more items, your size increases, making you more powerful in the arena. The game features smooth controls and intense gameplay, requiring quick reflexes and smart movement to survive and dominate your rivals in real time.\n",
+    "icon": "https://img.gamedistribution.com/82a43013636b44e2b7593fb73026e570-512x384.jpg",
+    "gameUrl": "https://html5.gamedistribution.com/82a43013636b44e2b7593fb73026e570/",
+    "categories": [
+      ".IO",
+      "Casual"
+    ],
+    "tags": [
+      "boat",
+      "fighting",
+      "sea",
+      "water",
+      "arena",
+      "Kids Friendly",
+      "No Blood"
+    ]
+  },
+  {
+    "id": "my-purrfect-cat-hotel-b08734",
+    "title": "My Purrfect Cat Hotel",
+    "description": "Welcome to My Purrfect Cat Hotel, a super cute cat hotel simulation management game. Enjoy cute and vivid cartoon cat animations. This is the vacation spot for all meow stars, and your mission is to create the most cozy cat hotel. Serving a variety of adorable cats and catering to their needs. Make your hotel the most popular animal tycoon hotel.",
+    "icon": "https://img.gamedistribution.com/b0873448cc8e425893f755e7b2ba4323-512x384.jpg",
+    "gameUrl": "https://html5.gamedistribution.com/b0873448cc8e425893f755e7b2ba4323/",
+    "categories": [
+      "Simulation"
+    ],
+    "tags": [
+      "animal",
+      "cat",
+      "cute",
+      "hotel",
+      "Kids Friendly",
+      "No Blood"
+    ]
+  },
+  {
+    "id": "secret-galaxy-match-three-42fb82",
+    "title": "Secret Galaxy. Match-three",
+    "description": "\"Secrets of the Galaxy\" is an exciting match-3 game where you embark on a space journey with pilot Inessa and her faithful robot A.S.K.A. Their ship is damaged, and they are stranded in the depths of the universe. To return home, you must solve engaging puzzles by matching elements and creating powerful combos. Along the way, you will face asteroids, laser traps, space distortions, and other unique obstacles.",
+    "icon": "https://img.gamedistribution.com/42fb822bb06f41299d218b5262248eba-1280x550.jpg",
+    "gameUrl": "https://html5.gamedistribution.com/42fb822bb06f41299d218b5262248eba/",
+    "categories": [
+      "Match-3"
+    ],
+    "tags": [
+      "colorful",
+      "galaxy",
+      "logic",
+      "relax",
+      "sliding-puzzle",
+      "No Blood"
+    ]
+  },
+  {
+    "id": "rope-sorting-136dcf",
+    "title": "Rope Sorting",
+    "description": "In the game “Rope Sorting” you are waiting for exciting puzzles, where you need to sort the ropes. Pass an infinite number of levels, collect stars, use aids, be the first!\n\nRollback actions - allows you to return to the previous step to take a different path.\n\nAdding a coil - makes it easier to pass a level by adding another empty coil.",
+    "icon": "https://img.gamedistribution.com/136dcf0ddcdd4d49ade514516ace69a3-512x512.jpg",
+    "gameUrl": "https://html5.gamedistribution.com/136dcf0ddcdd4d49ade514516ace69a3/",
+    "categories": [
+      "Puzzle",
+      "Casual"
+    ],
+    "tags": [
+      "color",
+      "logic",
+      "timekiller",
+      "sorting",
+      "No Blood"
+    ]
+  },
+  {
+    "id": "paint-roller-1f6433",
+    "title": "Paint Roller",
+    "description": "Control two tethered spheres in this unique painting challenge. Click to anchor one sphere in place while the other swings around it on an elastic tether, leaving a dynamic paint trail. Your objective? Strategically rotate your tethered pair to completely coat all target cylinders in each level.",
+    "icon": "https://img.gamedistribution.com/1f643374f2b5434bad7b3443a2ba53bb-512x384.jpg",
+    "gameUrl": "https://html5.gamedistribution.com/1f643374f2b5434bad7b3443a2ba53bb/",
+    "categories": [
+      "Agility",
+      "Casual"
+    ],
+    "tags": [
+      "ball",
+      "painting",
+      "rolling",
+      "paintball",
+      "Kids Friendly",
+      "No Blood"
+    ]
+  },
+  {
+    "id": "sprunki-torches-maze-6fa347",
+    "title": "Sprunki Torches Maze",
+    "description": "Light up all the torches in the room to unlock the door. Some torches are linked and will toggle together when activated. Watch out for bats! Contact with them results in a game over! Your goal is to exit the house through the front yard door.",
+    "icon": "https://img.gamedistribution.com/6fa3476e999940758e7fb6175cdf2b87-512x384.jpg",
+    "gameUrl": "https://html5.gamedistribution.com/6fa3476e999940758e7fb6175cdf2b87/",
+    "categories": [
+      "Adventure",
+      "Puzzle"
+    ],
+    "tags": [
+      "avoid",
+      "escape",
+      "logic",
+      "maze",
+      "survival",
+      "Kids Friendly",
+      "No Blood"
+    ]
+  },
+  {
+    "id": "roller-coaster-rush-093e91",
+    "title": "Roller Coaster Rush",
+    "description": "Speed through tracks in Roller Coaster Rush! Play free and online in this thrilling coaster game.\n\nRoller Coaster Rush is an exhilarating 3D game that puts you in control of a speeding roller coaster. Your goal is to accelerate through the tracks without crashing, performing crazy jumps and navigating steep drops. Hold to speed up and release to slow down just in time. Each level challenges your timing and precision as you rush through colorful and thrilling environments.",
+    "icon": "https://img.gamedistribution.com/093e91aab5604ba39ac2c37530e50be8-512x384.jpg",
+    "gameUrl": "https://html5.gamedistribution.com/093e91aab5604ba39ac2c37530e50be8/",
+    "categories": [
+      "Casual",
+      "Simulation"
+    ],
+    "tags": [
+      "1player",
+      "boy",
+      "train",
+      "3d",
+      "Kids Friendly",
+      "No Blood"
+    ]
+  },
+  {
+    "id": "craftmart-b8c3d9",
+    "title": "CraftMart",
+    "description": "Noob decided to go into business and open his own shop. And what do all the people of Minecraft want? That's right - to eat!\n\nIn Noob's shop you can always buy beet soup and bread! And also a lot of other food.\n\nAnd now all the residents of Minecraft rushed to the best store! Help Noob to serve all the customers! No one should go hungry! :)\n\nBuild new fields for wheat and beets, get a cow and a chicken and expand the shop to the maximum assortment!",
+    "icon": "https://img.gamedistribution.com/b8c3d90dea1147659b4cb410d61d971f-1280x550.jpg",
+    "gameUrl": "https://html5.gamedistribution.com/b8c3d90dea1147659b4cb410d61d971f/",
+    "categories": [
+      "Casual",
+      "Simulation"
+    ],
+    "tags": [
+      "farm",
+      "idle",
+      "minecraft",
+      "restaurant",
+      "supermarket",
+      "No Blood"
+    ]
+  },
+  {
+    "id": "choo-choo-spider-monster-train-eb36fa",
+    "title": "Choo Choo Spider Monster Train",
+    "description": "Welcome to the most terrifying train ride of your life!\nCho-Cho Scary Charles: Spider Train is a chilling open-world survival horror shooter where your only lifeline is a small yellow train armed with a machine gun and a whole lot of courage.\nFace off against Charles — the monstrous spider-train hybrid that haunts a remote island, preying on unsuspecting humans. No one knows where he came from, but one thing is clear — he won't stop until he's fed.",
+    "icon": "https://img.gamedistribution.com/eb36fabd59bb4be5b5a44012fa259d93-512x384.jpg",
+    "gameUrl": "https://html5.gamedistribution.com/eb36fabd59bb4be5b5a44012fa259d93/",
+    "categories": [
+      "Shooter",
+      "Simulation"
+    ],
+    "tags": [
+      "fighting",
+      "guns",
+      "monster",
+      "Kids Friendly"
+    ]
+  },
+  {
+    "id": "flower-collection-0bbd65",
+    "title": "Flower Collection",
+    "description": "Flower Collection is a poetic casual adventure game where players explore a beautiful natural world to collect various rare and beautiful flowers. The game combines exploration, collection, and light puzzle elements to bring players a peaceful and delightful gaming experience.",
+    "icon": "https://img.gamedistribution.com/0bbd6518425349f8a28c6742b92915e9-512x384.jpg",
+    "gameUrl": "https://html5.gamedistribution.com/0bbd6518425349f8a28c6742b92915e9/",
+    "categories": [
+      "Merge"
+    ],
+    "tags": [
+      "flowers",
+      "garden",
+      "Kids Friendly",
+      "No Blood"
+    ]
+  },
+  {
+    "id": "cat-mini-restaurant-196df9",
+    "title": "Cat Mini Restaurant",
+    "description": "In this heartwarming and healing simulation management game \"Meow Flavor Restaurant\", you will become a little cat owner who loves cooking and personally create your own dream restaurant. Starting from a small cat house kitchen, gradually upgrading equipment, developing new recipes, recruiting cute cat employees, until becoming the most popular internet celebrity restaurant in the city! More than 30 cats with different personalities and skills are waiting for you to collect! ",
+    "icon": "https://img.gamedistribution.com/196df99b32324438b39a4dcf18f0f838-512x384.jpg",
+    "gameUrl": "https://html5.gamedistribution.com/196df99b32324438b39a4dcf18f0f838/",
+    "categories": [
+      "Simulation"
+    ],
+    "tags": [
+      "1player",
+      "business",
+      "restaurant",
+      "girls",
+      "Kids Friendly",
+      "No Blood"
+    ]
+  },
+  {
+    "id": "coffee-craze---sorting-game-5d6c4f",
+    "title": "Coffee Craze - Sorting Game",
+    "description": "Coffee Craze - Sorting Game is the ultimate café puzzle experience where your barista skills are put to the test! Sort colorful coffee cups, match drinks by type, and serve them quickly to satisfy every customer.\n\nWith intuitive drag-and-drop mechanics, fast-paced levels, and delightful coffee-themed visuals, it’s the perfect blend of relaxing and brain-teasing fun.",
+    "icon": "https://img.gamedistribution.com/5d6c4fd1c9674ef59a7c10e73d8f0f59-512x384.jpg",
+    "gameUrl": "https://html5.gamedistribution.com/5d6c4fd1c9674ef59a7c10e73d8f0f59/",
+    "categories": [
+      "Puzzle",
+      "Casual"
+    ],
+    "tags": [
+      "1player",
+      "cake",
+      "color",
+      "cupcake",
+      "shopping",
+      "Kids Friendly",
+      "No Blood"
+    ]
+  },
+  {
+    "id": "maze-escape-toilet-rush-1c8826",
+    "title": "Maze Escape Toilet Rush",
+    "description": "What's the most urgent situation you can imagine? Of course, it is the last second of finding a toilet. In Maze Escape: Toilet Rush, you'll have a nervous and hilarious maze escape. Each level is a brand-new maze. You need to find the best route to the toilet quickly. Use your logic and intelligence to reach your destination successfully.",
+    "icon": "https://img.gamedistribution.com/1c88268155a249bbac734c84935af09b-512x384.jpg",
+    "gameUrl": "https://html5.gamedistribution.com/1c88268155a249bbac734c84935af09b/",
+    "categories": [
+      "Puzzle",
+      "Casual"
+    ],
+    "tags": [
+      "cute",
+      "escape",
+      "logic",
+      "Kids Friendly",
+      "No Blood"
+    ]
+  },
+  {
+    "id": "shoot-and-drive-bdada7",
+    "title": "Shoot And Drive",
+    "description": "Radiation is spreading all over the world. People are going crazy, a tough battle for life continues.\nAfter falling into the trap of bandits along with your crewmates, you’ll have to fight to the end. And your best ‘friends’ — a rusty gun and a car that’s about to stall — will come to your aid.",
+    "icon": "https://img.gamedistribution.com/bdada74b919b41358887997c76d909a1-1280x550.jpg",
+    "gameUrl": "https://html5.gamedistribution.com/bdada74b919b41358887997c76d909a1/",
+    "categories": [
+      "Shooter"
+    ],
+    "tags": [
+      "guns",
+      "monster",
+      "shoot-em-up",
+      "survival",
+      "arcade",
+      "No Blood"
+    ]
+  },
+  {
+    "id": "your-dream-room-e9e797",
+    "title": "Your dream room",
+    "description": "Do you dream of creating the perfect room? \nIn this game you will become a real interior designer! \nHave fun, experiment and turn an empty space into a cozy dream corner.\nChoose wallpaper, flooring and furniture in different styles. Decorate the room with stylish accessories, add coziness!\nChoose the color scheme and arrange items as you like.\nExperiment with design, create unique interiors and enjoy the process!\nStart creating your dream room now!",
+    "icon": "https://img.gamedistribution.com/e9e797905bd34f719fa592901bd4284e-512x384.jpg",
+    "gameUrl": "https://html5.gamedistribution.com/e9e797905bd34f719fa592901bd4284e/",
+    "categories": [
+      "Art",
+      "Casual"
+    ],
+    "tags": [
+      "2d",
+      "beauty",
+      "construction",
+      "design",
+      "relax",
+      "No Blood"
+    ]
+  },
+  {
+    "id": "super-dog-hero-dash-f4cd73",
+    "title": "Super Dog Hero Dash",
+    "description": "Super Dog Hero Dash is an interesting 3D running game with endless adventure and fun! You’ll become a brave dog hero running through a colorful city in this cartoonish world. Begin exciting challenges across various platforms! ",
+    "icon": "https://img.gamedistribution.com/f4cd73bd55df4befaf6262e8f5f412a3-512x512.jpg",
+    "gameUrl": "https://html5.gamedistribution.com/f4cd73bd55df4befaf6262e8f5f412a3/",
+    "categories": [
+      "Racing & Driving",
+      "Casual"
+    ],
+    "tags": [
+      "dog",
+      "runner",
+      "parkour",
+      "Kids Friendly",
+      "No Blood"
+    ]
+  },
+  {
+    "id": "children-happy-farm-dudu-9e90ce",
+    "title": "Children Happy Farm DuDu",
+    "description": "Hey there, little farmers in the making! Welcome to \"Children Happy Farm DuDu\"! This is an amazing casual simulator designed just for your kids. In this fun-filled farm world, you'll be the boss of your farm. The farm is full of cute animals like fluffy sheep, clucking chickens, and friendly cows. Your job is to take good care of them. Feed the animals, clean their shelters, and make sure they are happy. ",
+    "icon": "https://img.gamedistribution.com/9e90ce4e83244923bb4680672a407022-512x384.jpg",
+    "gameUrl": "https://html5.gamedistribution.com/9e90ce4e83244923bb4680672a407022/",
+    "categories": [
+      "Casual",
+      "Simulation"
+    ],
+    "tags": [
+      "animal",
+      "farm",
+      "pet",
+      "kidgames",
+      "Kids Friendly",
+      "No Blood"
+    ]
+  },
+  {
+    "id": "burger-catch-a9afce",
+    "title": "BURGER CATCH",
+    "description": "Move the tray left and right to collect the ordered ingredients! If time runs out or you collect too many extra ingredients, you will lose hearts. If you run out of hearts, it's game over.",
+    "icon": "https://img.gamedistribution.com/a9afce108d824d6f838218dd87aa2ef4-512x384.jpg",
+    "gameUrl": "https://html5.gamedistribution.com/a9afce108d824d6f838218dd87aa2ef4/",
+    "categories": [
+      "Cooking",
+      "Casual"
+    ],
+    "tags": [
+      "dishes",
+      "food",
+      "hamburger",
+      "restaurant",
+      "fastfood",
+      "Kids Friendly",
+      "No Blood"
+    ]
+  }
+]

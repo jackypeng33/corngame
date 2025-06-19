@@ -28,9 +28,7 @@ main {
 .game-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-    gap: 1.5rem;
-    max-width: 1200px;
-    margin: 0 auto;
+    gap: 20px;
 }
 
 /* Game Card Styles */
@@ -448,4 +446,91 @@ nav ul li a:hover, nav ul li a.active {
     .game-grid {
         grid-template-columns: 1fr;
     }
+}
+
+/* Filter and Search Controls */
+.filter-controls {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    gap: 20px;
+}
+
+#category-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#category-filters button {
+    padding: 8px 16px;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: all 0.2s ease-in-out;
+}
+
+#category-filters button:hover {
+    background-color: #e0e0e0;
+    border-color: #bbb;
+}
+
+#category-filters button.active {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+.search-wrapper input {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    min-width: 250px;
+}
+
+/* Pagination Styles */
+#pagination-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    gap: 8px;
+}
+
+#pagination-container a {
+    color: #007bff;
+    padding: 8px 16px;
+    text-decoration: none;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#pagination-container a:hover {
+    background-color: #f0f0f0;
+}
+
+#pagination-container a.active {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+#pagination-container a.disabled {
+    color: #ccc;
+    pointer-events: none;
+    border-color: #eee;
+}
+
+/* Utility Classes */
+.hidden {
+    display: none;
+}
+
+.loader {
+    font-style: italic;
+    color: #888;
 } 
